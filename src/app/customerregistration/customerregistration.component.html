@@ -1,0 +1,79 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+	<fieldset>
+		<legend>Details</legend>
+	<div class = "row">
+	<div class = "col-md-4"> 
+			<label for="input-text-1">First Name</label>
+            <input type="fname" class="form-control" id="fname" name = "fname" placeholder="Enter First Name" [(ngModel)]="fname">
+	</div>
+	<div class = "col-md-4"> 
+			<label for="input-id-2">Last Name</label>
+            <input type="lname" class="form-control" id="lname"  name = "lname" placeholder="Enter Last Name" [(ngModel)]="lname" >
+	</div>
+	<div class = "col-md-4"> 
+			<label for="input-password-1">Email</label>
+            <input type="email" class="form-control" id="email"  name = "email" placeholder="Please Enter Email" [(ngModel)]="email" >
+	</div>	
+	</div>
+
+	<div class = "row">
+	<div class = "col-md-4"> 
+			<label for="input-password-2">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="password">
+	</div>
+	<div class = "col-md-4"> 
+			<label for="input-id-3">Phone</label>
+            <input type="address" class="form-control" id="phone" placeholder="Please Enter Phone" [(ngModel)]="phone">
+	</div>
+	<div class = "col-md-4"> 
+			<label for="input-id-3">Address</label>
+            <input type="address" class="form-control" id="address" placeholder="Please Enter Address" [(ngModel)]="address">
+	</div>
+   </div>
+   <br>
+ </fieldset>
+
+</div>
+
+<div class="container">
+	<fieldset>
+		<legend>Vehicle Details</legend>
+	<div class = "row">
+	<div class = "col-md-4"> 
+			<label for="input-text-1">Make</label>
+            <input type="Make" class="form-control" id="vehicleMake" name = "vehicleMake" placeholder="Please Enter Vehicle Make" [(ngModel)]="vehicleMake">
+	</div>
+	<div class = "col-md-4"> 
+			<label for="input-id-2">Model</label>
+            <input type="Model" class="form-control" id="vehicleModel"  name = "Model" placeholder="Please Enter Vehicle Model" [(ngModel)]="vehicleModel" >
+	</div>
+	<div class = "col-md-4"> 
+			<label for="input-password-1">Year</label>
+            <input type="Year" class="form-control" id="vehicleYear"  name = "vehicleYear" placeholder="Please Enter vehicleYear" [(ngModel)]="vehicleYear" >
+	</div>	
+	</div>
+
+	<div class = "row">
+	<div class = "col-md-4"> 
+			<label for="input-password-2">Mileage</label>
+            <input type="VehicleMileage" class="form-control" id="vehicleMileage" placeholder=" Please Enter VehicleMileage" [(ngModel)]="vehicleMileage">
+	</div>
+	<div class = "col-md-4"> 
+			<label for="input-id-3">VIN</label>
+            <input type="VIN" class="form-control" id="vehicleVIN" placeholder="Please Enter VIN" [(ngModel)]="vehicleVIN">
+	</div>
+	<br> <br>
+	<!-- <div class = "col-md-4"> 
+		<input type = "submit"  class= "btn" value = "AddVehicle"  (click) = "addVehicle()"/>
+  </div> -->
+   </div>
+   <br>
+ </fieldset>
+</div>
+<br>
+  <router-outlet></router-outlet>
